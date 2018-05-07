@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="./src/lib/jquery.min.1.8.3.js"></script>
+    <script type="text/javascript" src="./src/lib/nebulas.js"></script>
+    <script>
+        var nebulas = require("nebulas");
+        var HttpRequest = nebulas.HttpRequest;
+        var Neb = nebulas.Neb;
+        var Account = nebulas.Account;
+        var Transaction = nebulas.Transaction;
+        var Utils = nebulas.Utils;
+        var neb = new Neb();
+        var URL = {
+            local: { chainId: 100, url: "http://127.0.0.1:8685" },
+            testnet: { chainId: 1001, url: "https://testnet.nebulas.io" },
+            mainnet: { chainId: 1, url: "https://mainnet.nebulas.io" }
+        };
+        // var URL_key = 'local'
+        var URL_key = 'testnet'
+        // var URL_key = 'mainnet'
+        neb.setRequest(new HttpRequest(URL[URL_key].url));
+        var chainId = URL[URL_key].chainId;
+    </script>
+</head>
+<body>
+
+<div id="app">
+    <router-view></router-view>
+</div>
+
+</body>
+
+</html>
