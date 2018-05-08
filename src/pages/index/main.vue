@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="body-body">
         <p class="header" @click="aaa()">区块链彩票系统（只支持星云链）</p>
 
         <ul>
@@ -55,6 +55,12 @@
 </script>
 
 <style lang="less" scoped>
+    .body-body {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+
+    }
     .header {
         font-size: 20px;
         text-align: center;
@@ -62,7 +68,7 @@
     }
     ul {
         display: flex;
-        width: 360px;
+        width: 100%;
         margin: 20px auto 0 auto;
         color: #0696ab;
     }

@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <script type="text/javascript" src="./src/lib/jquery.min.1.8.3.js"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="./src/lib/nebulas.js"></script>
     <script>
         var nebulas = require("nebulas");
@@ -18,8 +22,8 @@
             mainnet: { chainId: 1, url: "https://mainnet.nebulas.io" }
         };
         // var URL_key = 'local'
-        var URL_key = 'testnet'
-        // var URL_key = 'mainnet'
+        // var URL_key = 'testnet'
+        var URL_key = 'mainnet'
         neb.setRequest(new HttpRequest(URL[URL_key].url));
         var chainId = URL[URL_key].chainId;
     </script>

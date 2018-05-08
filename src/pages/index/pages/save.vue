@@ -85,7 +85,7 @@
                 priv_key: '',
                 account: null,
                 address_from: '',
-                address_to: 'n1vHJboPxAXSWNgZviRg8oUpThXMPXdpNok',
+                address_to: 'n1wjxf8N9e82aHb4e7mkdPwUX6GbyiAXxPz',
                 contract: {
                     function: "save",
                     args: ''
@@ -221,31 +221,31 @@
         margin: 30px auto 0 auto;
         display: flex;
         flex-direction: row;
-        width: 452px;
+        width: 100%;
         li {
-            width: 100px;
+            flex: 1 1 auto;
+            width: 25%;
             text-align: center;
         }
-        .last {
-            width: 150px;
-        }
+        /*.last {*/
+            /*width: 150px;*/
+        /*}*/
 
     }
 
     .select-number-container {
         display: flex;
         margin: 20px auto 0 auto;
-        width: 452px;
+        width: 100%;
         ul {
-            width: 100px;
+            width: 25%;
+            flex: 1 1 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         .last {
             border-left: 1px solid #ccc;
-            width: 150px;
-            flex: 0 0 auto;
         }
         li {
             flex: 1 1 auto;
@@ -266,7 +266,7 @@
 
 
     .submit-body {
-        width: 500px;
+        width: 100%;
         border: 1px solid #0696ab;
         padding: 10px;
         margin: 30px auto 0 auto;
@@ -276,12 +276,13 @@
                 width: 100%;
                 line-height: 40px;
                 padding: 5px 15px;
+                border: 1px solid #ccc;
             }
         }
         .group-value {
             overflow: hidden;
             input {
-                width: 200px;
+                width: 50%;
                 float: left;
             }
             p {

@@ -7,12 +7,12 @@
 </template>
 <style lang="less" scoped>
     .body {
-        width: 500px;
+        width: 100%;
         margin: 70px auto 50px auto;
     }
     img {
-        width: 300px;
-        height: 300px;
+        width: 70%;
+        height: 70%;
         display: block;
         margin: auto;
     }

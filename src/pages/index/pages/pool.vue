@@ -17,7 +17,7 @@
                 neb.api.call({
                     chainID: window.chainId,
                     from: 'n1XuciYNch6JfxY6gzVNFsET4emaxzwoRsd',
-                    to: 'n1vHJboPxAXSWNgZviRg8oUpThXMPXdpNok',
+                    to: 'n1wjxf8N9e82aHb4e7mkdPwUX6GbyiAXxPz',
                     value: 0,
                     // nonce: this.nonce,
                     gasPrice: 1000000,

@@ -10,8 +10,9 @@
 </template>
 <style lang="less" scoped>
     .rule-body {
-        width: 500px;
+        width: 100%;
         margin: 50px auto 50px auto;
+        padding: 0 10px;
         p {
             font-size: 14px;
             line-height: 1.5;

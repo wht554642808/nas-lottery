@@ -1,6 +1,5 @@
 <template>
     <div>
-
         <div class="submit-body" v-show="!isShowResult">
             <div class="group group-key">
                 <input type="text" v-model="priv_key" placeholder="输入您的私钥"/>
@@ -71,7 +70,7 @@
                 isShowDialog: false,
                 account: null,
                 address_from: '',
-                address_to: 'n1vHJboPxAXSWNgZviRg8oUpThXMPXdpNok',
+                address_to: 'n1wjxf8N9e82aHb4e7mkdPwUX6GbyiAXxPz',
                 isShowResult: false,
                 guessNumber: '',
                 value: 0,
@@ -230,9 +229,8 @@
 </script>
 
 <style lang="less" scoped>
-
     .submit-body {
-        width: 500px;
+        width: 100%;
         border: 1px solid #0696ab;
         padding: 10px;
         margin: 30px auto 50px auto;
@@ -242,6 +240,7 @@
                 width: 100%;
                 line-height: 40px;
                 padding: 5px 15px;
+                border: 1px solid #ccc;
             }
         }
         .group-key {
@@ -265,7 +264,7 @@
 
 
     .result-body {
-        width: 500px;
+        width: 100%;
         margin: 30px auto 0 auto;
         .top-div {
             img {
